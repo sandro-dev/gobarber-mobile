@@ -5,8 +5,8 @@ import reactotronSaga from 'reactotron-redux-saga';
 
 if (__DEV__) {
   const tron = Reactotron.configure({ name: 'gobarbermobile' })
-    .useReactNative()
     .setAsyncStorageHandler(AsyncStorage)
+    .useReactNative()
     .use(reactotronRedux())
     .use(reactotronSaga())
     .connect();
